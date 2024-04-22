@@ -1,0 +1,22 @@
+{
+    "ModTitle": "Retro-Frame-Custom",
+    "ModVersion": "1.0.0",
+    "DFUnity_Version": "1.0.0",
+    "ModDescription": "Example mod for modifying Retro-Frame overlay.",
+    "GUID": "3699ddc5-a8e9-48ac-b308-395abd661f81",
+    "Files": [
+        "Assets/Game/Mods/Retro-Frame-Custom/Scripts/RetroCustomMod.cs",
+        "Assets/Game/Mods/Retro-Frame-Custom/Textures/BottomBorder.png",
+        "Assets/Game/Mods/Retro-Frame-Custom/Textures/Frame.png",
+        "Assets/Game/Mods/Retro-Frame-Custom/Textures/TopBorder.png",
+        "Assets/Game/Mods/Retro-Frame-Custom/Textures/HotkeyButton.png"
+    ],
+    "Dependencies": [
+        {
+            "Name": "retro-frame",
+            "IsOptional": false,
+            "IsPeer": false,
+            "Version": "1.1.1"
+        }
+    ]
+}
