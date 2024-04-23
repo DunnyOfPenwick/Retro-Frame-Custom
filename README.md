@@ -1,7 +1,7 @@
 # Retro-Frame-Custom
  Sample mod to alter Retro-Frame
 
-When adding or removing textures, remember to add/remove them in the mod builder as well.
+When adding or removing texture files, remember to add/remove them in the mod builder as well.
 
 ### Structure of Overlay Panel Content (current as of v1.1.1)
 - OverlayPanel (default BackgroundTexture is 'Frame')
