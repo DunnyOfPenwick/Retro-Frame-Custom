@@ -58,8 +58,11 @@ namespace RetroCustom
 
         private void Update()
         {
-            //Retro-Frame constantly updates hotkey label formats, so we must reformat every frame.
-            FormatHotkeyButtonText();
+            if (overlay != null)
+            {
+                //Retro-Frame constantly updates hotkey label formats (colors), so we must reformat every frame.
+                FormatHotkeyButtonText();
+            }
         }
 
 
