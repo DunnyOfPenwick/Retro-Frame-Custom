@@ -53,6 +53,8 @@ namespace RetroCustom
             HideActiveEffectIconCutouts();
 
             HideHotkeyIconCutouts();
+
+            ChangeHUDVitalsBars();
         }
 
 
@@ -153,6 +155,18 @@ namespace RetroCustom
         }
 
 
+        void ChangeHUDVitalsBars()
+        {
+            Panel hudVitalsBarsPanel = GetPanel("MainPanel,LeftPanel,VitalsPanel,HUDVitalsBars");
+
+            //HUDVitals is a sub-type of Panel, just cast it.
+            HUDVitals vitals = (HUDVitals)hudVitalsBarsPanel;
+
+            //Example of changing the health bar size/position. Fractional decimal values can be used.
+            Vector2 barSize = new Vector2(19, 112);
+            vitals.CustomHealthBarPosition = new Vector2(30, 24);
+            vitals.CustomHealthBarSize = barSize;
+        }
 
 
         Panel GetPanel(string pathString)
